@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Travel Landing</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <h1>Urban Travel</h1>
+            </div>
+            <div class="links">
+                <div class="link"><a href="#">Home</a></div>
+                <div class="link"><a href="#">Services</a></div>
+                <div class="link"><a href="#">Gallery</a></div>
+                <div class="link"><a href="#">Contact</a></div>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg"></i>
+        <div class="dropdown">
+            <div class="dropdown-link">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Gallery</a>
+                <a href="#">Contact</a>
+                <i class="fa-regular fa-circle-xmark cancel"></i>
+            </div>
+        </div>
+    </nav>
+    <section class="home">
+        <h1>The Great Outdoors Traveling</h1>
+        <p>Wander Often. Wonder Always</p>
+        <br><br>
+        <i class="fa-regular fa-circle-play"></i>
+    </section>
+
+    <section class="explore">
+        <div class="heading">
+            <h1>Explore The World</h1>
+        </div>
+        <div class="sub-heading">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+        </div>
+        <div class="places">
+            <div class="card card1">
+                <img src="finland.jpg" alt="">
+                <div class="main-card">
+                    <h1>Halti Mountain</h1>
+                    <span>FINLAND</span>
+                </div>
+            </div>
+
+            <div class="card card2">
+                <img src="swedia.jpg" alt="">
+                <div class="main-card">
+                    <h1>Stockholm</h1>
+                    <span>SWEDIA</span>
+                </div>
+            </div>
+
+             <div class="card card3">
+                <img src="swiss.jpg" alt="">
+                <div class="main-card">
+                    <h1>Alpen Mountain</h1>
+                    <span>SWISS</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="more">
+            <a href="#">See More<i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="heading"><h1>Gallery</h1></div>
+          <div class="section_container gallery_container">
+             <div class="image_gallery">
+                <div class="gallery_col">
+                    <img src="gallery 1.jpg" alt="gallery" />
+                </div>
+                <div class="gallery_col">
+                    <img src="gallery 2.png" alt="gallery" />
+                    <img src="gallery 3.jpg" alt="gallery" />
+                </div>
+             </div>
+             <div class="gallery_content">
+                <div>
+                    <h2 class="section_title">
+                        Our trip gallery that will inspire you
+                    </h2>
+                    <p class="section_title">
+                        Explore your suitable and dream places around the world.
+                        Here you can find your right destination.
+                    </p>
+                    <button class="btn">View All</button>
+                </div>
+             </div>
+          </div>
+    </section>
+    <section class="subscribe">
+        <div class="section_container subscribe_container">
+            <div class="subscribe_content">
+                <h2 class="section_title">Subscribe to get spesial prize</h2>
+                <p class="section_subtitle">
+                    Explore your suitable and dream places around the world.
+                    Here you can find your right destination.
+                </p>
+            </div>
+            <div class="subscribe_form">
+                <form>
+                    <input type="email" placeholder="Your email here" />
+                    <button class="btn" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="section_container footer_container">
+            <div class="footer_col">
+                <h3>Urban Travel</h3>
+                <p>Explore your suitable and dream places around the world.
+                    Here you can find your right destination.
+                </p>
+            </div>
+            <div class="footer_col">
+                <h4>Support</h4>
+                <p>FAQs</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+                <p>Contact Us</p>
+            </div>
+            <div class="footer_col">
+                <h4>Address</h4>
+                <p>
+                    <span>Address</span> Komplek Bumi Mukti Indah Blok A 10
+                    No 9, Ciracas-Serang-Banten Indonesia.
+                </p>
+                <p><span>Email</span> ahmadhumam8626@gmail.com</p>
+                <p><span>Phone</span> +6282213487785</p>
+            </div>
+        </div>
+        <div class="footer_bar">
+            Copyright 2025 Web Design By Ahmad Humam. All rights reserverd.
+        </div>
+    </footer>
+    <script>
+        const hamburg = document.querySelector(".hamburg")
+        const cancel = document.querySelector(".cancel")
+        const navbar = document.querySelector(".dropdown")
+
+        hamburg.addEventListener("click",() => {
+            navbar.style.transform = "translateY(0px)"
+        })
+
+        cancel.addEventListener("click",() => {
+            navbar.style.transform = "translateY(-400px)"
+        })
+    </script>
+</body>
+</html>
